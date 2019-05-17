@@ -1,0 +1,138 @@
+<div class="header-container">
+    <div class="l_header">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="javascript:;">华为官网</a></li>
+            <li><a href="javascript:;">荣耀官网</a></li>
+            <li><a href="javascript:;">花粉俱乐部</a></li>
+            <li><a href="javascript:;">V码(优购码)</a></li>
+            <li><a href="javascript:;">企业购</a></li>
+            <li><a href="javascript:;">Select Region</a></li>
+            <li class="select">
+                <div class="nav"><a href="javascript:;" class="iconfont_more">更多精彩</a></div>
+                <div class="dropdown_more dropdown">
+                    <dl>
+                        <dt><a href="javascript:;">EMUI</a></dt>
+                        <dt><a href="javascript:;">应用市场</a></dt>
+                        <dt><a href="javascript:;">华为终端云空间</a></dt>
+                        <dt><a href="javascript:;">开发者联盟</a></dt>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="r_header">
+        <ul>
+            <li>
+                <div id="login-btn">
+                    <a href="/html/login.html">请登录</a>
+                    <a href="/html/register.html">注册</a>
+                </div>
+                <div id="after-login">
+                    <span>欢迎你，</span>
+                    <span id="name"></span>
+                    <span id="exit">退出</span>
+                </div>
+            </li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li class="select">
+                <div class="nav"><a href="javascript:;" class="iconfont_more">客服服务</a></div>
+                <div class="dropdown_serve dropdown">
+                    <dl>
+                        <dt><a href="javascript:;">服务中心</a></dt>
+                        <dt><a href="javascript:;">联系客服</a></dt>
+                    </dl>
+                </div>
+            </li>
+            <li class="select">
+                <div class="nav"><a href="javascript:;" class="iconfont_more">网站导航</a></div>
+                <div class="dropdown_nav dropdown">
+                    <div class="homepage">
+                        <a href="/">
+                            <div class="home">
+                                <p><i class="iconfont icon-home"></i></p>
+                                <span>商城首页</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <h3>频道</h3>
+                        <div><a href="javascript:;">华为专区</a></div>
+                        <div><a href="javascript:;">荣耀专区</a></div>
+                        <div><a href="javascript:;">企业购</a></div>
+                    </div>
+                    <div class="list">
+                        <h3>产品</h3>
+                        <div><a href="javascript:;">手机</a></div>
+                        <div><a href="javascript:;">智能家居</a></div>
+                        <div><a href="javascript:;">平板&笔记本</a></div>
+                        <div><a href="javascript:;">通用配件</a></div>
+                        <div><a href="javascript:;">智能穿戴</a></div>
+                        <div><a href="javascript:;">专属配件</a></div>
+                    </div>
+                    <div class="list">
+                        <h3>增值服务</h3>
+                        <div><a href="javascript:;">以旧换新</a></div>
+                        <div><a href="javascript:;">礼品包装</a></div>
+                        <div><a href="javascript:;">补购保障</a></div>
+                        <div><a href="javascript:;">一口价换电池</a></div>
+                    </div>
+                    <div class="list">
+                        <h3>会员</h3>
+                        <div><a href="javascript:;">会员频道</a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="select">
+                <div class="nav"><a href="javascript:;" class="iconfont_more">手机版</a></div>
+                <div class="dropdown_phone dropdown">
+                    <a href="javascript">
+                        <img src="/images/ewm.png" alt="" style="width:90px; height:90px;">
+                    </a>
+                    <div>
+                        <h5>华为商城APP</h5>
+                        <p>新人专享好礼<br>最高5000积分</p>
+                        <span>
+                            <img src="/images/min.gif" alt="">
+                            <img src="/images/min2.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="select">
+                <div class="nav"><a href="/html/cart.html" class="iconfont_cart">购物车(<span id="cart-num">0</span>)</a>
+                </div>
+                <div class="dropdown_cart dropdown">
+                    <div id="empty">
+                        <span><i class="iconfont icon-gouwuche"></i></span>
+                        <p>你的购物车是空的,赶紧选购吧</p>
+                    </div>
+                    <div id="data">
+                        <div class="box-wrap" id="container"></div>
+                        <script type="text/html" id="template-box">
+                                    <div class="box">
+                                        {{each cart item}}
+                                        <div class="info">
+                                            <input type="checkbox" class="cart-check" checked>
+                                            <img src="{{item.imgs[0]}}" alt="">
+                                            <div>
+                                                <p>{{item.subtitle}}</p>
+                                                <p><i>x<b class="num-h">{{item.num}}</b></i><span>￥<b class="price-h">{{item.price}}</b></span><s>￥ {{item.originalPrice}}</s></p>
+                                            </div>
+                                        </div>
+                                        {{/each}}
+                                    </div>
+                               </script>
+                        <div class="calcMoney">
+                            <p>
+                                <span>总计：</span><br>
+                                <span>￥<b id="Money"></b></span>
+                            </p>
+                            <p>结算 </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

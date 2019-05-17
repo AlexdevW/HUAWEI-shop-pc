@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城-登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <header>
+       <div class="header-wrap">
+            <div class="login"><a href="/"><img src="/images/HUAWEI.png" alt=""></a></div>
+            <b>|</b>
+            <h1>华为商城</h1>
+       </div>
+    </header>
+    <main>
+        <div class="tips">
+            <span>依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+        </div>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="login-list">
+                    <div class="title">
+                        <div class="account ac" >
+                            <a href="javascript:;">账号登录</a>
+                        </div>
+                        <div class="scan">
+                            <a href="javascript:;">扫码登录</a>
+                        </div>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="手机号/邮件地址/华为号" class="username input" id="username-input">
+                        <input type="password" placeholder="密码" class="pwd input" id="pwd-input">
+                        <div><a href="javascript:;" title="短信验证码登录">短信验证码登录</a></div>
+                        <input type="button" value="登录" id="loginBtn">
+                        <p><label><input type="checkbox" id="checkbox">&nbsp;记住华为账号</label><a href="javascript:;">更多</a></p>
+                    </form>
+                    <div class="register">
+                        <a href="/html/register.html" title="注册账号">注册账号</a>
+                        <a href="javascript:;" title="忘记密码">忘记密码？</a>
+                    </div>
+                    <div class="login-a">
+                        <i></i>
+                        <span>其它方式登录</span>
+                        <i></i>
+                    </div>
+                    <div class="login-b">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="siteinfo">
+            <a href="javascript:;">华为帐号用户协议</a>
+            <a href="javascript:;">关于华为帐号与隐私的声明</a>
+            <a href="javascript:;">常见问题</a>
+        </div>
+        <div class="copyright">
+            <span>Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</span>
+        </div>
+    </footer>
+    <script src="/libs/requirejs/require.js" data-main="../js/login.js"></script>
+</body>
+</html>

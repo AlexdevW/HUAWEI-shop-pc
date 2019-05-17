@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城官网</title>
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.css">
+    <link rel="stylesheet" href="/libs/font/iconfont.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="nav-header">
+        <a href="javascript:;"></a>
+        <a href="javascript:;" class="iconfont icon-guanbi"></a>
+    </div>
+    <header></header>
+    <main>
+        <div class="header">
+            <div class="left">
+                <div class="logo" id="logos">
+                    <a href="javascript:;">
+                        <img src="/images/logo.png" alt="" title="Vmall.com - 华为商城">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="/html/list.html">
+                                <img src="/images/logo1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/html/list.html">
+                                <img src="/images/logo2.png" alt="">
+                            </a>
+                        </li>
+                        <li><a href="/html/list.html">华为p30</a></li>
+                        <li><a href="/html/list.html">荣耀20i</a></li>
+                        <li><a href="/html/list.html">华为五一购</a></li>
+                        <li><a href="/html/list.html">荣耀V20</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <form action="" autocomplete="off">
+                    <input type="text" placeholder="荣耀20i" id="search-box">
+                    <button type="button" class="iconfont icon-sousuo"></button>
+                </form>
+                <div class="search-list" id="spinner-container"></div>
+                <script type="text/html" id="spinner-template">
+                    <ul>
+                        {{each spinner item}}
+                        <li>{{item[0]}}</li>
+                        {{/each}}
+                    </ul>
+               </script>
+            </div>
+        </div>
+
+        <div class="banner-wrap">
+            <!-- 轮播图 -->
+            <div class="banner">
+                <div class="swiper-container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!--分页器 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 前后切换按钮 -->
+                    <div class="swiper-btn-prev btn"><a href="javascript:;" class="iconfont icon-fanhui"></a></div>
+                    <div class="swiper-btn-next btn"> <a href="javascript:;" class="iconfont icon-gengduo"></a></div>
+                    <!-- 分类列表 -->
+                    <div class="categry-list">
+                        <ol>
+                            <li class="categry-1">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">手机</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">荣耀</a>
+                                            <a href="/html/list.html">HUAWEI P系列</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min1.png" alt="">
+                                                <span>荣耀</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min2.jpg" alt="">
+                                                <span>HUAWEI P系列</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min1.png" alt="">
+                                                <span>荣耀</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min2.jpg" alt="">
+                                                <span>HUAWEI P系列</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min1.png" alt="">
+                                                <span>荣耀</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min2.jpg" alt="">
+                                                <span>HUAWEI P系列</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min1.png" alt="">
+                                                <span>荣耀</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=2">
+                                                <img src="/images/min2.jpg" alt="">
+                                                <span>HUAWEI P系列</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-btn">
+                                            <a href="/html/list.html">查看全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="categry-2">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">笔记本 & 平板</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">平板电脑</a>
+                                            <a href="/html/list.html">笔记本电脑</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="/html/detail.html?id=3">
+                                                <img src="/images/min3.png" alt="">
+                                                <span>平板电脑</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=3">
+                                                <img src="/images/min4.png" alt="">
+                                                <span>笔记本电脑</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/detail.html?id=3">
+                                                <img src="/images/min5.png" alt="">
+                                                <span>笔记本配件</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-btn">
+                                            <a href="/html/list.html">查看全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="categry-3">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">智能穿戴</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">手环</a>
+                                            <a href="/html/list.html">手表</a>
+                                            <a href="/html/list.html">VR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min6.png" alt="">
+                                                <span>手环</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min7.png" alt="">
+                                                <span>手表</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min8.png" alt="">
+                                                <span>VR</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-btn">
+                                            <a href="javascript:;">查看全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="categry-4">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">智能家居</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">路由器</a>
+                                            <a href="/html/list.html">电视盒子</a>
+                                            <a href="/html/list.html">照明</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min10.png" alt="">
+                                                <span>照明</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min11.png" alt="">
+                                                <span>华为备咖储存</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min11.png" alt="">
+                                                <span>华为备咖储存</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min10.png" alt="">
+                                                <span>照明</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min10.png" alt="">
+                                                <span>照明</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min9.png" alt="">
+                                                <span>路由器</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min11.png" alt="">
+                                                <span>华为备咖储存</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-btn">
+                                            <a href="javascript:;">查看全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="categry5">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">热销配件</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">保护壳</a>
+                                            <a href="/html/list.html">移动电源</a>
+                                            <a href="/html/list.html">耳机</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min12.png" alt="">
+                                                <span>保护壳</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min13.png" alt="">
+                                                <span>耳机</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min13.png" alt="">
+                                                <span>耳机</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-btn">
+                                            <a href="javascript:;">查看全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="categry-6">
+                                <div class="categry-box">
+                                    <div class="categry-info">
+                                        <div class="top"><a href="/html/list.html">增值服务&其他</a></div>
+                                        <div class="bottom">
+                                            <a href="/html/list.html">增值服务</a>
+                                            <a href="/html/list.html">增值卡</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categry-panels">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min16.png" alt="">
+                                                <span>智能计算</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="/images/min15.png" alt="">
+                                                <span>增值卡</span>
+                                            </a>
+                                        </li>
+                                        <ul>
+                                            <li class="sub-btn">
+                                                <a href="javascript:;">查看全部</a>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <div class="nav-l">
+                        <div class="people">
+                            <img src="/images/people.png" alt="">
+                        </div>
+                        <div class="login-a">
+                            <span>你好! 请 </span>
+                            <a href="/html/login.html" class="login">登录</a>
+                            <span>&nbsp;/&nbsp;</span>
+                            <a href="/html/register.html" class="register">注册</a>
+                            <p>
+                                <a href="javascript:;">
+                                    新人福利
+                                </a>
+                                <a href="javascript:;">
+                                    会员频道
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav-c">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="企业特惠购" class="img1">
+                                    </div>
+                                    <span>企业特惠购</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="以旧换新" class="img2">
+                                    </div>
+                                    <span>以旧换新</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="会员领劵" class="img3">
+                                    </div>
+                                    <span>会员领劵</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="新品优惠购" class="img4">
+                                    </div>
+                                    <span>新品优惠购</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="荣耀数码" class="img5">
+                                    </div>
+                                    <span>荣耀数码</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img-p">
+                                        <img src="/images/nav.png" alt="华为数码" class="img6">
+                                    </div>
+                                    <span>华为数码</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-r">
+                        <div class="nav-top">
+                            <h3>公告</h3>
+                            <div>
+                                <ul id="Notice">
+                                    <li><a href="javascript:;">智能家居520真爱告白攻略</a></li>
+                                    <li><a href="javascript:;">荣耀20新品首发 预约购机赢惊喜好礼</a></li>
+                                    <li><a href="javascript:;">荣耀国际电信日AI无界通话</a></li>
+                                    <li><a href="javascript:;">华为情人节活动公告</a></li>
+                                    <li><a href="javascript:;">荣耀国际电信日AI无界通话</a></li>
+                                    <li><a href="javascript:;">5月购机抽奖活动  </a></li>
+                                    <li><a href="javascript:;">智能家居520真爱告白攻略</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-bottom">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span><img src="/images/nav.png" alt="" class="img1"></span>
+                                        优购码
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span><img src="/images/nav.png" alt="" class="img2"></span>
+                                        实名认证
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span><img src="/images/nav.png" alt="" class="img3"></span>
+                                        补购保障
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column" id="column-container"></div>
+        <!-- column模板 -->
+        <script type="text/html" id="column-template">
+            <ul>
+                {{each column item}}
+                <li><a href="/html/detail.html?id={{item.id}}"><img src="{{item.image}}" alt=""></a></li>
+                {{/each}}
+            </ul>
+        </script>
+        <div class="title">
+            <h3>热销单品</h3>
+        </div>
+        <div class="list-phone" id="list-container"></div>
+        <!-- list模板 -->
+        <script type="text/html" id="list-template">
+            <div class="list-l">
+                <a href="/html/detail.html?id={{list.id}}"><img src="{{img}}"></a>
+            </div>
+           
+            <div class="list-r">
+                <ul>
+                    {{each list item}}
+                    <li>
+                        <a href="/html/detail.html?id={{item.id}}">
+                            <p><img src="{{item.image}}"></p>
+                            <p id="title">{{item.title}}</p>
+                            <p id="activity">{{item.activity}}</p>
+                            <p id="price">￥{{item.price}}</p>
+                            <span id="state">{{item.state}}</span>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            </script>
+        <div class="title">
+            <h3>精品推荐</h3>
+        </div>
+        <div class="menu" id="menu-container"></div>
+        <!-- menu模板 -->
+        <script type="text/html" id="menu-template">
+                <ul id="switch" style="left:0">
+                    {{each menu item}}
+                    <li>
+                        <a href="/html/detail.html?id={{item.id}}">
+                            <dl>
+                                <dt><img src="{{item.image}}"></dt>
+                                <dd>{{item.activity}}</dd>
+                                <span>{{item.state}}</span>
+                            </dl>
+                            <p>{{item.title}}</p>
+                            <p class="price">￥{{item.price}}</p>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+                <div class="btn-l iconfont" id="btn-l"></div>
+                <div class="btn-r iconfont" id="btn-r"></div>
+        </script>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.js" data-main="js/index"></script>
+</body>
+
+</html>

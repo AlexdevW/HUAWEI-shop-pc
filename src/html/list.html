@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城-列表</title>
+    <link rel="stylesheet" href="/libs/font/iconfont.css">
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-wrap">
+            <div class="header">
+                <div class="left">
+                    <div class="logo">
+                        <a href="javascript:;">
+                            <img src="/images/logo.png" alt="" title="Vmall.com - 华为商城">
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    手机
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    笔记本 & 平板
+                                </a>
+                            </li>
+                            <li><a href="javascript:;">智能穿戴</a></li>
+                            <li><a href="javascript:;">智能家居</a></li>
+                            <li><a href="javascript:;">热销配件</a></li>
+                            <li><a href="javascript:;">增值服务&其它</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <input type="text" placeholder="荣耀20i">
+                        <button type="button" class="iconfont icon-sousuo"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <p><a href="/">首页</a></p>
+            <p>手机</p>
+            <p>Mate</p>
+            <p>HUAWEI Mate 20 Pro (UD) 8GB+128GB 全网通版（翡冷翠）</p>
+        </div>
+        <div class="tab">
+            <div class="classify">
+                <p>分类：</p>
+                <ul>
+                    <li><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">HUAWEI Mate系列</a></li>
+                    <li><a href="javascript:;">荣耀</a></li>
+                    <li><a href="javascript:;">HUAWEI Mate系列</a></li>
+                    <li><a href="javascript:;">HUAWEI 畅玩系列</a></li>
+                    <li><a href="javascript:;">HUAWEI Mate系列</a></li>
+                    <li><a href="javascript:;">HUAWEI Mate系列</a></li>
+                </ul>
+            </div>
+            <div class="sort">
+                <p>分类：</p>
+                <ul>
+                    <li><a href="javascript:;">上架时间</a></li>
+                    <li><a href="javascript:;">价格</a></li>
+                    <li><a href="javascript:;">评价</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content" id="list-container"></div>
+        <!-- list模板 -->
+        <script type="text/html" id="list-template">
+            <ul>
+                {{each list item}}
+                <li>
+                    <a href="/html/detail.html?id={{item.id}}" class="img"><img src="{{item.image}}"></a>
+                    <a href="/html/detail.html?id={{item.id}}">{{item.title}}</a>
+                    <p>{{item.price}}</p>
+                    <div class="bottom">
+                        <div class="buy"><a  href="/html/detail.html?id={{item.id}}">选购</a></div>
+                        <div class="evaluate"><span>{{item.evaluate}}</span>人评价</div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/list"></script>
+</body>
+
+</html>

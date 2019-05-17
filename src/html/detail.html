@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城-详情</title>
+    <link rel="stylesheet" href="/libs/font/iconfont.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-wrap">
+            <div class="header">
+                <div class="left">
+                    <div class="logo">
+                        <a href="javascript:;">
+                            <img src="/images/logo.png" alt="" title="Vmall.com - 华为商城">
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="/html/list.html">
+                                    手机
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/html/list.html">
+                                    笔记本 & 平板
+                                </a>
+                            </li>
+                            <li><a href="/html/list.html">智能穿戴</a></li>
+                            <li><a href="/html/list.html">智能家居</a></li>
+                            <li><a href="/html/list.html">热销配件</a></li>
+                            <li><a href="/html/list.html">增值服务&其它</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <input type="text" placeholder="荣耀20i">
+                        <button type="button" class="iconfont icon-sousuo"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <p><a href="/">首页</a></p>
+            <p>手机</p>
+            <p>HUAWEI Mate系列</p>
+            <p>HUAWEI Mate 20 Pro (UD) 8GB+128GB 全网通版（翡冷翠）</p>
+        </div>
+        <!-- 详情页模板 -->
+        <div class="content" id="detail-container"></div>
+        <script type="text/html" id="detail-template">
+                <div class="left">
+                        <div class="product-img-big">
+                                <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}" alt="">
+                        </div>
+                    <div class="product-img-min">
+                        <div class="back"><a href="javascript:;"></a></div>
+                        <div class="nav-img" id="product-img">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" data-image="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}">
+                                       <img class="s" src="{{data.imgs[0]}}" alt=""> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" data-image="{{data.imgs[1]}}" data-zoom-image="{{data.imgs[1]}}">
+                                       <img class="s" src="{{data.imgs[1]}}" alt=""> 
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;" data-image="{{data.imgs[2]}}" data-zoom-image="{{data.imgs[2]}}">
+                                       <img class="s" src="{{data.imgs[2]}}" alt=""> 
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;" data-image="{{data.imgs[3]}}" data-zoom-image="{{data.imgs[3]}}">
+                                       <img class="s" src="{{data.imgs[3]}}" alt=""> 
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;" data-image="{{data.imgs[4]}}" data-zoom-image="{{data.imgs[4]}}">
+                                       <img class="s" src="{{data.imgs[4]}}" alt=""> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="forward"><a href="javascript:;"></a></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title-r">{{data.title}}</div>
+                    <div class="msg"><a href="javascript:;">{{data.subtitle}}</a></div>
+                    <div class="tips">
+                        <div class="t">
+                            <p>价 &nbsp; 格</p>
+                            <div><span>抢购价&nbsp;￥</span>{{data.price}}&nbsp;<s>￥{{data.originalPrice}}</s></div>
+                        </div>
+                        <div class="b">
+                            <p>促 &nbsp; 销</p>
+                            <ul>
+                                <li>
+                                    <div class="f1">限时特价</div>
+                                    <div class="f2">限时优惠200</div>
+                                </li>
+                                <li>
+                                    <div class="f1">整点赠送</div>
+                                    <div class="f2">10点/16点/20点 下单前200名送不锈钢保温杯（Mate 20系列共享）</div>
+                                </li>
+                                <li>
+                                    <div class="f1">商品赠券</div>
+                                    <div class="f2">支付后赠双人体检券</div>
+                                </li>
+                                <li>
+                                    <div class="f1">分期免息</div>
+                                    <div class="f2">掌上生活、花呗、工行分期支付可享免息</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div> <label>服务说明</label><span>已满48元已免运费&nbsp;由华为商城负责发货，并提供售后服务</span></div>
+                        <div><label>商品编码</label><span>{{data.productCode}}</span></div>
+                    </div>
+                    <div class="color-list">
+                        <label>选择颜色</label>
+                        <ul>
+                            <li class="ac">亮黑色</li>
+                            <li>亮黑色</li>
+                            <li>宝石蓝</li>
+                            <li>樱粉金</li>
+                            <li>亮黑色</li>
+                        </ul>
+    
+                    </div>
+                    <div class="Edition">
+                        <label>选择版本</label>
+                        <ul>
+                            <li class="ac">全网通 6GB+128GB</li>
+                            <li>全网通 8GB+128GB</li>
+                            <li>全网通 8GB+256GB</li>
+                        </ul>
+                    </div>
+                    <div class="setmeal">
+                        <label>选择套餐</label>
+                        <ul>
+                            <li class="ac">官方标配</li>
+                        </ul>
+                    </div>
+                    <div class="select">
+                        <label>已选择商品</label>
+                        <p>亮黑色 / 全网通 8GB+256GB / 3D面部识别+屏内指纹 / 官方标配 </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="number">
+                            <input type="number" value="1" min="1" id="num-input">
+                            <p>
+                                <a href="javascript:;" id="add-num">+</a>
+                                <a href="javascript:;" id="reduce-num">-</a>
+                            </p>
+                        </div>
+                        <div class="cart-add" id="add-cart">
+                            <a href="javascript:;">加入购物车</a>
+                        </div>
+                        <div class="PlaceOrder">
+                            <a href="javascript:;">立即下单</a>
+                        </div>
+                    </div>
+                </div>
+          </script>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/detail"></script>
+</body>
+
+</html>

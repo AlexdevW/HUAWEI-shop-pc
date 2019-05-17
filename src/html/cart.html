@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城-购物车</title>
+    <link rel="stylesheet" href="/libs/font/iconfont.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-wrap">
+            <div class="header">
+                <div class="left">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/images/logo7.png" alt="" title="Vmall.com - 华为商城">
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <h3>我的购物车</h3>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/images/-.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="islogin" id="islogin">
+            <p> 您还没有登录！登录后可查看之前加入的商品</p>
+            <p class="btn-login"><a href="/html/login.html">登录</a></p>
+        </div>
+        <div class="content">
+            <div class="empty">
+                <p><img src="/images/cart.png" alt=""></p>
+                <p>您的购物车里什么也没有哦~</p>
+                <div><a href="/">去逛逛</a></div>
+            </div>
+
+            <!-- cart模板 -->
+            <div class="result" id="cart-container"></div>
+            <script type="text/html" id="cart-template">
+                    <div class="title">
+                        <input type="checkbox" id="checkbox" class="checkboxall" checked> <label for="checkbox" >全选</label>
+                        <p>商品</p>
+                        <ul>
+                            <li>单价</li>
+                            <li>数量</li>
+                            <li>小计</li>
+                            <li>操作</li>
+                        </ul>
+                    </div>
+                    {{each cart item}}
+                    <div class="product" data-id="{{item.id}}">
+                        <input type="checkbox"  class="btn-login btn" checked>
+                        <div class="img">
+                            <a href="javascript:;">
+                                <img src="{{item.imgs[0]}}" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li ><a href="detail.html?id={{item.id}}" title="{{item.title}}">{{item.title}}</a></li>
+                            <li>
+                                <div class="price-a">
+                                    <span>¥ {{item.price}}</span><br>
+                                    <s>¥ {{item.originalPrice}}</s>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="number">
+                                    <input type="number" class="num-input" value="{{item.num}}"  value="{{item.num}}">
+                                    <p>
+                                        <a href="javascript:;" class="add-num">+</a>
+                                        <a href="javascript:;" class="reduce-num">-</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span>￥ <i class="price">{{item.price*item.num}}</i></span><br>
+                                <span>省&nbsp;￥<i class="discount">{{item.originalPrice*item.num}}</i></span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="btn-del">删除</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {{/each}}
+                    <div class="settle">
+                        <label>
+                            <input type="checkbox" class="checkboxall" checked> 全选
+                        </label>
+                        <div class="del">
+                            <a href="javascript:;" id="del-btn">删除</a>
+                        </div>
+                        <div class="tips">
+                            <div class="l">
+                                <p class="t">总计:&nbsp;<span>￥&nbsp;<i class="total">1299.00</i></span></p>
+                                <p class="b">已选择&nbsp;<span class="num">1</span>&nbsp;件商品，优惠：<span>￥<i class="totalcount">100.00</i></span></p>
+                            </div>
+                            <a href="javascript:;">
+                                <div class="r">立即结算</div> 
+                            </a>
+                        </div>
+                    </div>
+            </script>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/cart"></script>
+</body>
+
+</html>

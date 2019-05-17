@@ -1,0 +1,25 @@
+{
+  "name": "huawei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-minify-css": "^1.2.4"
+  },
+  "dependencies": {
+    "gulp-html-hash": "0.0.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
